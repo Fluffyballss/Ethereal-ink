@@ -4,8 +4,7 @@ export enum GamePhase {
   PET_SELECT,
   ITEM_SELECT,
   WORLD_MAP,
-  ADVENTURE,
-  VEO_ANIMATOR
+  ADVENTURE
 }
 
 export type Rarity = '보통' | '희귀' | '매우 희귀' | '전설' | '신화';
@@ -58,11 +57,11 @@ export interface Item {
 
 export interface SpecialInteraction {
   type: 'quiz' | 'dialogue';
-  question?: string; // For quiz
-  answer?: string;   // For quiz
-  npcName?: string;  // For dialogue
-  npcPersonality?: string; // For dialogue
-  npcDialogue?: string;    // For dialogue
+  question?: string;
+  answer?: string;
+  npcName?: string;
+  npcPersonality?: string;
+  npcDialogue?: string;
 }
 
 export interface GameState {
@@ -79,7 +78,7 @@ export interface GameState {
   history: LogEntry[];
   hp: number;
   maxHp: number;
-  karma: number; // -100 to 100
+  karma: number;
   gold: number;
 }
 
