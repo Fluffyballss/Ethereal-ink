@@ -1,0 +1,7 @@
+{
+  "name": "Ethereal Ink TRPG",
+  "description": "A modern, minimalist TRPG experience featuring AI-driven storytelling, ink-style maps, and character animation using Veo.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
